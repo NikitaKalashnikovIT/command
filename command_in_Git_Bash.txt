@@ -18,6 +18,20 @@ cd ../..  —>Выйти на 2 уровня вверх
 3.Введите в name имя для вашего репозитория и необязательное описание.
 4.Выберите видимость хранилища.
 5.Нажмите Создать репозиторий Create repository.
+// Пример создал репозиторий с именем test
+// …or create a new repository on the command line
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NikitaKalashnikovIT/test.git
+git push -u origin main
+// …or push an existing repository from the command line
+git remote add origin https://github.com/NikitaKalashnikovIT/test.git
+git branch -M main
+git push -u origin main
+
 
 // стандартные операции записи данных в репозиторий
 1. с помощью навигации выбрать папку с проектом
